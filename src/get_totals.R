@@ -65,10 +65,11 @@ get_totals <- function(yrStart=1947, yrMax=2017) {
 }
 
 
-total_table_updated <- get_totals(1947,2017)
-write.csv(total_table_updated,
-          file="./data/total_table_updated.csv",
-          row.names=FALSE)
+# total_table_updated <- get_totals(1947,2017)
+
+# write.csv(total_table_updated,
+#          file="./data/total_table_updated.csv",
+#          row.names=FALSE)
 
 # compare counts from table with counts from my script -----------------------------------------
 # # load(file="total_table")
