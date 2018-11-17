@@ -32,7 +32,7 @@
 
 # Get updated total values by quering PubMed API --------------------------------------------------
 
-get_totals <- function(yrStart=1947, yrMax=2017) {
+get_totals <- function(yrStart, yrMax) {
   # add progressbar
   pb <- txtProgressBar(min = yrStart, max = yrMax, style = 3)
   # create empty data frame
