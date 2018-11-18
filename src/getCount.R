@@ -3,7 +3,7 @@
 
 ## curl = getCurlHandle() # reuse curl-connection
 
-getCount <- function(query.term){
+getCount <- function(query.term, yrStart, yrMax){
   
   # convert spaces to '+'
   query.gsub <- gsub(" ", "+", query.term)
