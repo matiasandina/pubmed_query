@@ -1,6 +1,7 @@
 library(XML)
 library(httr)
 library(dplyr)
+library(ggplot2)
 
 ########################
 # Download PubMed Data #
