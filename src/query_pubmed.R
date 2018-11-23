@@ -62,8 +62,17 @@ query_pubmed <- function(query, yrStart, yrMax) {
     
     # Try reading it from data
     # If that fails, Call function to retrieve it
-    total_table_updated <- tryCatch(read.csv('./data/total_table_updated.csv'),
-                                    finally = get_totals(yrStart,yrMax))
+   
+    total_table_updated <- tryCatch(
+      {
+        read.csv('./data/total_table_updated.csv')
+      },
+      error = function(e){
+        get_totals(yrStart,yrMax)
+      }
+    )
+    
+    
     
     
   }
